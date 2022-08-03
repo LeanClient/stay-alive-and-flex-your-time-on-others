@@ -69,12 +69,12 @@ local messages = {
     "I'm a god tier player, why are you saying I'm hacking?",
     "Get destroyed by {c}",
     "Why are you so bad at the game?",
-    "Ez, ez, ez, ez, ez, ez, ez, ez!",
-    "{v} get good",
-    "{v} you have no skillz",
+    "you're stupid",
+    "{v} get good noob",
+    "{v} no skillz",
     "ur dog water kid",
-    "git good bud",
-    "imagine not having a good gaming chair!",
+    "get good nerd",
+    "no gaming chair?",
     "NOOB",
     "you suck tbf",
     "jack isnt dumb"
@@ -243,7 +243,7 @@ local window = library:CreateWindow('random gui') do
         end})
         
         folder:AddToggle({text = 'SONIC', flag = 'speedHack'})
-        folder:AddSlider({text = 'speed slider', flag = 'speedFactor', min = 0.1, max = 0.35, float = 0.01})
+        folder:AddSlider({text = 'speed slider', flag = 'speedFactor', min = 0.1, max = 0.3, float = 0.01})
         folder:AddBind({text = 'Speed bind', flag = 'speedBind', hold = true, callback = function(value)
             library._speedHackHeld = (not value)
         end})
