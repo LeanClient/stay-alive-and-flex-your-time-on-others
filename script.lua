@@ -268,7 +268,6 @@ library:Init()
 
 
 
-repeat wait() until game:IsLoaded()
 
 local PS = game:GetService("Players")
 local Player = PS.LocalPlayer 
