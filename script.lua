@@ -243,7 +243,7 @@ local window = library:CreateWindow('random gui') do
         end})
         
         folder:AddToggle({text = 'SONIC', flag = 'speedHack'})
-        folder:AddSlider({text = 'speed slider', flag = 'speedFactor', min = 0.1, max = 0.3, float = 0.01})
+        folder:AddSlider({text = 'speed slider', flag = 'speedFactor', min = 0.1, max = 0.26, float = 0.01})
         folder:AddBind({text = 'Speed bind', flag = 'speedBind', hold = true, callback = function(value)
             library._speedHackHeld = (not value)
         end})
@@ -268,7 +268,7 @@ library:Init()
 
 
 
-task.wait(0.1)
+repeat wait() until game:IsLoaded()
 
 local PS = game:GetService("Players")
 local Player = PS.LocalPlayer 
