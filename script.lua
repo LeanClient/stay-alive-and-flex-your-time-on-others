@@ -235,7 +235,7 @@ client.CharacterAdded:connect(initLogic)
 local window = library:CreateWindow('random gui') do
     local folder = window:AddFolder('Main') do
         folder:AddToggle({text = 'auto sword', flag = 'autoAttack'})
-        folder:AddToggle({text = 'say stuff when you kill people', flag = 'killSay'})
+        folder:AddToggle({text = 'kill say ', flag = 'killSay'})
         folder:AddToggle({text = 'Follow Until Dead', flag = 'attachToTarget', callback = function(value)
             if (not value) then
                 target = nil;
